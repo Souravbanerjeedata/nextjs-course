@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Inter } from "next/font/google";
 import "./globals.css";
-import { Navbar } from "@/components/web/navbar";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/components/ui/theme-provider";
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
@@ -43,7 +42,6 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           disableTransitionOnChange
         >
           <main className="max-w-7xl w-full mx-auto px-4 md:px-6 lg:px-8">
-            <Navbar />
             {children}
           </main>
         </ThemeProvider>
